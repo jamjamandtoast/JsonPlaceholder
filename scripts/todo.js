@@ -12,7 +12,7 @@ function handleClick() {
   
     const todoId = todoIdInput.value;
      // making  an API call using fetch()
-    fetch("https://jsonplaceholder.typicode.com/todos/" + todoId)
+    fetch("http://localhost:3000/todos/" + todoId)
       .then(response => response.json())
       .then(data =>{
         let message = `TODO: ${data.id} ${data.title} completed: ${data.completed} user: ${data.userId}`
