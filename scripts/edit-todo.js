@@ -18,6 +18,9 @@ function fetchTodoData() {
         })
         .catch(error => console.error('Error:', error));
     }
+    function cancel() {
+      window.location.href = "index.html";
+    }
 
     function updateTodo() {
       const todoId = todoIdInput.value;

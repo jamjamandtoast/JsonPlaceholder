@@ -13,7 +13,7 @@
     <form id="todoForm">
       <label for="todoId">ToDo ID:</label>
       <input type="text" id="todoId" name="todoId" required>
-      <button type="button" onclick="fetchTodoData()">Fetch ToDo</button>
+      <button type="button" onclick="fetchTodoData()">info</button>
   
       <label for="title">Title:</label>
       <input type="text" id="title" name="title" required>
@@ -28,6 +28,7 @@
       <input type="text" id="userId" name="userId" readonly>
   
       <button type="button" onclick="updateTodo()">Update</button>
+      <button type="button" onclick="cancel()">Cancel</button>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="scripts/edit-todo.js"></script>
